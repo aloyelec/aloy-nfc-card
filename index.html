@@ -8,119 +8,102 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
-
 <style>
-
-body{
-margin:0;
-font-family:'Poppins',sans-serif;
-background:linear-gradient(145deg,#000000,#0a0f1f);
-color:white;
-text-align:center;
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(145deg, #000000, #0a0f1f);
+    color: white;
+    text-align: center;
 }
 
-/* CONTAINER */
-.container{
-padding:20px 14px;
-max-width:420px;
-margin:auto;
+.container {
+    padding: 25px 15px;   /* smaller spacing */
 }
 
 /* LOGO */
-.logo{
-width:90px;
-height:90px;
-border-radius:50%;
-object-fit:cover;
-border:2px solid #00aaff;
-box-shadow:0 0 15px rgba(0,170,255,0.6);
-margin-bottom:15px;
+.logo {
+    width: 110px;   /* smaller */
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    box-shadow: 0 0 20px rgba(0,123,255,0.8);
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* PROFILE */
-.profile{
-width:130px;
-height:130px;
-object-fit:cover;
-border-radius:12px;
-border:2px solid #00aaff;
-box-shadow:0 0 15px rgba(0,170,255,0.5);
-margin-bottom:18px;
+.profile {
+    width: 150px;   /* smaller */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #007bff;
+    box-shadow: 0 0 15px rgba(0,123,255,0.7);
+    margin-bottom: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-/* NAME (GLOWING BLUE) */
+/* NAME */
 .name{
-font-family:'Cinzel',serif;
-font-size:22px;
-font-weight:700;
-color:#00aaff;
-letter-spacing:1px;
-margin-bottom:5px;
-
-text-shadow:
-0 0 5px #00aaff,
-0 0 10px #00aaff,
-0 0 18px #007bff;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #00aaff;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
 }
 
 /* COMPANY */
 .company{
-font-size:13px;
-letter-spacing:2px;
-text-transform:uppercase;
-opacity:0.85;
-margin-bottom:18px;
+    font-size: 15px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-/* BUTTONS */
-.link-btn{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:8px;
-
-width:90%;
-max-width:300px;
-
-margin:8px auto;
-padding:10px 12px;
-
-background:#0f1629;
-
-border-radius:10px;
-text-decoration:none;
-color:white;
-
-font-weight:500;
-font-size:14px;
-
-border:1px solid #007bff;
-
-box-shadow:0 0 8px rgba(0,123,255,0.4);
-
-transition:0.25s;
+/* BUTTONS SLIMMER */
+.link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 85%;
+    max-width: 320px;
+    margin: 10px auto;
+    padding: 10px 12px;  /* slimmer */
+    background: #0f1629;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;   /* smaller text */
+    border: 1px solid #007bff;
+    transition: 0.3s;
 }
 
-/* ICON */
-.link-btn i{
-font-size:16px;
-color:#00aaff;
+/* SMALLER ICONS */
+.link-btn i {
+    font-size: 16px;
+    color: #00aaff;
 }
 
-/* HOVER */
-.link-btn:hover{
-background:#007bff;
-transform:scale(1.03);
-box-shadow:0 0 15px rgba(0,123,255,0.8);
+.link-btn:hover {
+    background: #007bff;
+    transform: scale(1.03);
+    box-shadow: 0 0 12px rgba(0,123,255,0.8);
 }
 
-/* FOOTER */
-.footer{
-margin-top:25px;
-font-size:11px;
-color:#777;
-}  
-
+.footer {
+    margin-top: 30px;
+    font-size: 11px;
+    color: #888;
+}
 </style>
 </head>
 
@@ -128,45 +111,43 @@ color:#777;
 
 <div class="container">
 
-<img src="logo.png" alt="Company Logo" class="logo">
+    <img src="logo.png" alt="Company Logo" class="logo">
+    <img src="profile.jpg" alt="Profile Photo" class="profile">
 
-<img src="profile.jpg" alt="Profile Photo" class="profile">
-
-<div class="name">ALOYSIOUS @ ALOY</div>
-
+    <div class="name">ALOYSIOUS @ ALOY</div>
 <div class="company">ALOY ELECTRIC & ELECTRONICS SDN BHD</div>
 
-<a href="tel:0192408454" class="link-btn">
-<i class="fa-solid fa-phone"></i> Call Now
+    <a href="tel:0192408454" class="link-btn">
+        <i class="fa-solid fa-phone"></i> Call Now
+    </a>
+
+    <a href="https://wa.me/60192408454" class="link-btn">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+    </a>
+
+    <a href="mailto:aloyelec@gmail.com" class="link-btn">
+    <i class="fa-solid fa-envelope"></i> Email
 </a>
 
-<a href="https://wa.me/60192408454" class="link-btn">
-<i class="fa-brands fa-whatsapp"></i> WhatsApp
+    <a href="https://www.facebook.com/share/1GA3abi5b5/?mibextid=wwXIfr" class="link-btn" target="_blank">
+        <i class="fa-brands fa-facebook"></i> Facebook
+    </a>
+
+    <a href="https://www.tiktok.com/@aloy1180" class="link-btn" target="_blank">
+        <i class="fa-brands fa-tiktok"></i> TikTok
+    </a>
+
+    <a href="https://maps.app.goo.gl/J3CjHgwfwbBiRa4x5?g_st=aw" class="link-btn" target="_blank">
+        <i class="fa-solid fa-location-dot"></i> Location
+    </a>
+
+    <a href="aloy_contact.vcf" class="link-btn">
+    <i class="fa-solid fa-address-card"></i> Save Contact
 </a>
 
-<a href="mailto:aloyelec@gmail.com" class="link-btn">
-<i class="fa-solid fa-envelope"></i> Email
-</a>
-
-<a href="https://www.facebook.com/share/1GA3abi5b5/?mibextid=wwXIfr" class="link-btn" target="_blank">
-<i class="fa-brands fa-facebook"></i> Facebook
-</a>
-
-<a href="https://www.tiktok.com/@aloy1180" class="link-btn" target="_blank">
-<i class="fa-brands fa-tiktok"></i> TikTok
-</a>
-
-<a href="https://maps.app.goo.gl/J3CjHgwfwbBiRa4x5?g_st=aw" class="link-btn" target="_blank">
-<i class="fa-solid fa-location-dot"></i> Location
-</a>
-
-<a href="aloy_contact.vcf" class="link-btn">
-<i class="fa-solid fa-address-card"></i> Save Contact
-</a>
-
-<div class="footer">
-© 2026 Aloy Electric & Electronics
-</div>
+    <div class="footer">
+        © 2026 Aloy Electric & Electronics
+    </div>
 
 </div>
 
