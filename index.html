@@ -6,104 +6,133 @@
 <title>Aloy Electric & Electronics</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(145deg, #000000, #0a0f1f);
-    color: white;
-    text-align: center;
+
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background: radial-gradient(circle at top,#0b1f44,#000814);
+    color:white;
+    text-align:center;
 }
 
-.container {
-    padding: 25px 15px;   /* smaller spacing */
+/* CONTAINER */
+
+.container{
+    padding:30px 20px;
 }
 
 /* LOGO */
-.logo {
-    width: 110px;   /* smaller */
-    height: 110px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #007bff;
-    box-shadow: 0 0 20px rgba(0,123,255,0.8);
-    margin-bottom: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+.logo{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #2ecbff;
+    box-shadow:
+        0 0 25px #00c8ff,
+        inset 0 0 15px #00c8ff;
+    margin-bottom:25px;
 }
 
 /* PROFILE */
-.profile {
-    width: 150px;   /* smaller */
-    height: 150px;
-    object-fit: cover;
-    border-radius: 12px;
-    border: 2px solid #007bff;
-    box-shadow: 0 0 15px rgba(0,123,255,0.7);
-    margin-bottom: 25px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+.profile{
+    width:170px;
+    height:170px;
+    object-fit:cover;
+    border-radius:18px;
+    border:3px solid #2ecbff;
+    box-shadow:
+        0 0 25px #00c8ff,
+        inset 0 0 10px #00c8ff;
+    margin-bottom:30px;
 }
+
 /* NAME */
+
 .name{
-    font-family: 'Cinzel', serif;
-    font-size: 20px;
-    font-weight: 700;
-    color: #00aaff;
-    margin-bottom: 5px;
-    letter-spacing: 1px;
+    font-family:'Cinzel',serif;
+    font-size:24px;
+    color:#8fd3ff;
+    text-shadow:0 0 12px #00bfff;
+    letter-spacing:2px;
+    margin-bottom:6px;
 }
 
 /* COMPANY */
+
 .company{
-    font-size: 15px;
-    color: #ffffff;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size:14px;
+    letter-spacing:1px;
+    color:#d6ecff;
+    margin-bottom:30px;
 }
 
-/* BUTTONS SLIMMER */
-.link-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    width: 85%;
-    max-width: 320px;
-    margin: 10px auto;
-    padding: 10px 12px;  /* slimmer */
-    background: #0f1629;
-    border-radius: 10px;
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    font-size: 14px;   /* smaller text */
-    border: 1px solid #007bff;
-    transition: 0.3s;
+/* BUTTON STYLE */
+
+.link-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    width:90%;
+    max-width:380px;
+
+    margin:14px auto;
+    padding:14px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+    color:white;
+
+    font-size:16px;
+    font-weight:500;
+
+    background:rgba(5,15,35,0.6);
+
+    border:1px solid #2ecbff;
+
+    box-shadow:
+        0 0 10px rgba(0,170,255,0.7),
+        inset 0 0 10px rgba(0,170,255,0.4);
+
+    transition:0.3s;
 }
 
-/* SMALLER ICONS */
-.link-btn i {
-    font-size: 16px;
-    color: #00aaff;
+/* ICON */
+
+.link-btn i{
+    font-size:18px;
+    color:#00d4ff;
 }
 
-.link-btn:hover {
-    background: #007bff;
-    transform: scale(1.03);
-    box-shadow: 0 0 12px rgba(0,123,255,0.8);
+/* HOVER */
+
+.link-btn:hover{
+    transform:scale(1.05);
+
+    background:#007bff;
+
+    box-shadow:
+        0 0 20px #00c8ff,
+        inset 0 0 20px #00c8ff;
 }
 
-.footer {
-    margin-top: 30px;
-    font-size: 11px;
-    color: #888;
+/* FOOTER */
+
+.footer{
+    margin-top:40px;
+    font-size:12px;
+    color:#9fb7d9;
 }
+
 </style>
 </head>
 
@@ -111,43 +140,44 @@ body {
 
 <div class="container">
 
-    <img src="logo.png" alt="Company Logo" class="logo">
-    <img src="profile.jpg" alt="Profile Photo" class="profile">
+<img src="logo.png" class="logo" alt="Company Logo">
 
-    <div class="name">ALOYSIOUS @ ALOY</div>
+<div class="name">ALOYSIOUS @ ALOY</div>
 <div class="company">ALOY ELECTRIC & ELECTRONICS SDN BHD</div>
 
-    <a href="tel:0192408454" class="link-btn">
-        <i class="fa-solid fa-phone"></i> Call Now
-    </a>
+<img src="profile.jpg" class="profile" alt="Profile Photo">
 
-    <a href="https://wa.me/60192408454" class="link-btn">
-        <i class="fa-brands fa-whatsapp"></i> WhatsApp
-    </a>
-
-    <a href="mailto:aloyelec@gmail.com" class="link-btn">
-    <i class="fa-solid fa-envelope"></i> Email
+<a href="tel:0192408454" class="link-btn">
+<i class="fa-solid fa-phone"></i> Call Now
 </a>
 
-    <a href="https://www.facebook.com/share/1GA3abi5b5/?mibextid=wwXIfr" class="link-btn" target="_blank">
-        <i class="fa-brands fa-facebook"></i> Facebook
-    </a>
-
-    <a href="https://www.tiktok.com/@aloy1180" class="link-btn" target="_blank">
-        <i class="fa-brands fa-tiktok"></i> TikTok
-    </a>
-
-    <a href="https://maps.app.goo.gl/J3CjHgwfwbBiRa4x5?g_st=aw" class="link-btn" target="_blank">
-        <i class="fa-solid fa-location-dot"></i> Location
-    </a>
-
-    <a href="aloy_contact.vcf" class="link-btn">
-    <i class="fa-solid fa-address-card"></i> Save Contact
+<a href="https://wa.me/60192408454" class="link-btn">
+<i class="fa-brands fa-whatsapp"></i> WhatsApp
 </a>
 
-    <div class="footer">
-        © 2026 Aloy Electric & Electronics
-    </div>
+<a href="mailto:aloyelec@gmail.com" class="link-btn">
+<i class="fa-solid fa-envelope"></i> Email
+</a>
+
+<a href="https://www.facebook.com/share/1GA3abi5b5/?mibextid=wwXIfr" class="link-btn" target="_blank">
+<i class="fa-brands fa-facebook"></i> Facebook
+</a>
+
+<a href="https://www.tiktok.com/@aloy1180" class="link-btn" target="_blank">
+<i class="fa-brands fa-tiktok"></i> TikTok
+</a>
+
+<a href="https://maps.app.goo.gl/J3CjHgwfwbBiRa4x5?g_st=aw" class="link-btn" target="_blank">
+<i class="fa-solid fa-location-dot"></i> Location
+</a>
+
+<a href="aloy_contact.vcf" class="link-btn">
+<i class="fa-solid fa-address-card"></i> Save Contact
+</a>
+
+<div class="footer">
+© 2026 Aloy Electric & Electronics
+</div>
 
 </div>
 
