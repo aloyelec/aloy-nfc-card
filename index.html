@@ -3,186 +3,134 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Aloy Electric & Electronics</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 
 body{
-margin:0;
-font-family:'Poppins',sans-serif;
-background:radial-gradient(circle at top,#0a1633,#000000 70%);
-color:white;
-text-align:center;
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background: radial-gradient(circle at top,#0b1f44,#000814);
+    color:white;
+    text-align:center;
 }
 
-/* container */
+/* CONTAINER */
 
 .container{
-max-width:420px;
-margin:auto;
-padding:25px 15px;
+    padding:30px 20px;
 }
 
-/* logo */
+/* LOGO */
 
 .logo{
-width:105px;
-height:105px;
-border-radius:50%;
-border:3px solid #00aaff;
-object-fit:cover;
-margin-bottom:15px;
-
-box-shadow:
-0 0 18px #00aaff,
-0 0 45px rgba(0,170,255,0.7);
-
-position:relative;
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #2ecbff;
+    box-shadow:
+        0 0 25px #00c8ff,
+        inset 0 0 15px #00c8ff;
+    margin-bottom:25px;
 }
 
-/* side light beams */
-
-.logo::before,
-.logo::after{
-content:"";
-position:absolute;
-top:50%;
-width:120px;
-height:2px;
-background:linear-gradient(to right,transparent,#00aaff,transparent);
-transform:translateY(-50%);
-}
-
-.logo::before{
-left:-120px;
-}
-
-.logo::after{
-right:-120px;
-}
-
-/* name */
-
-.name{
-font-family:'Cinzel',serif;
-font-size:24px;
-letter-spacing:2px;
-color:#bfe8ff;
-margin-bottom:5px;
-
-text-shadow:
-0 0 6px #00aaff,
-0 0 18px #00aaff,
-0 0 35px #007bff;
-}
-
-/* divider */
-
-.divider{
-width:160px;
-height:1px;
-background:#4dafff;
-margin:6px auto 8px auto;
-opacity:.6;
-}
-
-/* company */
-
-.company{
-font-size:13px;
-letter-spacing:2px;
-color:#cfcfcf;
-margin-bottom:20px;
-}
-
-/* profile photo */
+/* PROFILE */
 
 .profile{
-width:140px;
-height:140px;
-border-radius:12px;
-border:2px solid #00aaff;
-
-box-shadow:
-0 0 15px rgba(0,170,255,0.8),
-0 0 35px rgba(0,170,255,0.4);
-
-object-fit:cover;
-margin-bottom:25px;
+    width:170px;
+    height:170px;
+    object-fit:cover;
+    border-radius:18px;
+    border:3px solid #2ecbff;
+    box-shadow:
+        0 0 25px #00c8ff,
+        inset 0 0 10px #00c8ff;
+    margin-bottom:30px;
 }
 
-/* buttons */
+/* NAME */
+
+.name{
+    font-family:'Cinzel',serif;
+    font-size:24px;
+    color:#8fd3ff;
+    text-shadow:0 0 12px #00bfff;
+    letter-spacing:2px;
+    margin-bottom:6px;
+}
+
+/* COMPANY */
+
+.company{
+    font-size:14px;
+    letter-spacing:1px;
+    color:#d6ecff;
+    margin-bottom:30px;
+}
+
+/* BUTTON STYLE */
 
 .link-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
 
-display:flex;
-align-items:center;
+    width:90%;
+    max-width:380px;
 
-width:90%;
-max-width:320px;
+    margin:14px auto;
+    padding:14px;
 
-margin:10px auto;
+    border-radius:40px;
 
-padding:12px 18px;
+    text-decoration:none;
+    color:white;
 
-border-radius:30px;
+    font-size:16px;
+    font-weight:500;
 
-background:linear-gradient(180deg,#0c1426,#050b16);
+    background:rgba(5,15,35,0.6);
 
-border:1px solid rgba(0,170,255,0.6);
+    border:1px solid #2ecbff;
 
-color:#e6f7ff;
-font-size:15px;
+    box-shadow:
+        0 0 10px rgba(0,170,255,0.7),
+        inset 0 0 10px rgba(0,170,255,0.4);
 
-box-shadow:
-0 0 10px rgba(0,170,255,0.4),
-inset 0 0 8px rgba(255,255,255,0.06);
-
-transition:.25s;
+    transition:0.3s;
 }
 
-/* hover */
-
-.link-btn:hover{
-
-transform:scale(1.03);
-
-box-shadow:
-0 0 18px rgba(0,170,255,0.7),
-0 0 35px rgba(0,170,255,0.4);
-
-}
-
-/* icons */
+/* ICON */
 
 .link-btn i{
-
-position:absolute;
-left:22px;
-
-font-size:18px;
+    font-size:18px;
+    color:#00d4ff;
 }
 
-/* icon colors */
+/* HOVER */
 
-.phone{color:#00aaff;}
-.whatsapp{color:#25D366;}
-.mail{color:#00aaff;}
-.facebook{color:#1877F2;}
-.tiktok{color:#ffffff;}
-.location{color:#00aaff;}
-.contact{color:#cccccc;}
+.link-btn:hover{
+    transform:scale(1.05);
 
-/* footer */
+    background:#007bff;
+
+    box-shadow:
+        0 0 20px #00c8ff,
+        inset 0 0 20px #00c8ff;
+}
+
+/* FOOTER */
 
 .footer{
-margin-top:25px;
-font-size:11px;
-color:#888;
+    margin-top:40px;
+    font-size:12px;
+    color:#9fb7d9;
 }
 
 </style>
@@ -192,42 +140,39 @@ color:#888;
 
 <div class="container">
 
-<img src="logo.png" class="logo">
+<img src="logo.png" class="logo" alt="Company Logo">
 
 <div class="name">ALOYSIOUS @ ALOY</div>
-
-<div class="divider"></div>
-
 <div class="company">ALOY ELECTRIC & ELECTRONICS SDN BHD</div>
 
-<img src="profile.jpg" class="profile">
+<img src="profile.jpg" class="profile" alt="Profile Photo">
 
 <a href="tel:0192408454" class="link-btn">
-<i class="fa-solid fa-phone phone"></i> Call Now
+<i class="fa-solid fa-phone"></i> Call Now
 </a>
 
 <a href="https://wa.me/60192408454" class="link-btn">
-<i class="fa-brands fa-whatsapp whatsapp"></i> WhatsApp
+<i class="fa-brands fa-whatsapp"></i> WhatsApp
 </a>
 
 <a href="mailto:aloyelec@gmail.com" class="link-btn">
-<i class="fa-solid fa-envelope mail"></i> Email
+<i class="fa-solid fa-envelope"></i> Email
 </a>
 
 <a href="https://www.facebook.com/share/1GA3abi5b5/?mibextid=wwXIfr" class="link-btn" target="_blank">
-<i class="fa-brands fa-facebook facebook"></i> Facebook
+<i class="fa-brands fa-facebook"></i> Facebook
 </a>
 
 <a href="https://www.tiktok.com/@aloy1180" class="link-btn" target="_blank">
-<i class="fa-brands fa-tiktok tiktok"></i> TikTok
+<i class="fa-brands fa-tiktok"></i> TikTok
 </a>
 
 <a href="https://maps.app.goo.gl/J3CjHgwfwbBiRa4x5?g_st=aw" class="link-btn" target="_blank">
-<i class="fa-solid fa-location-dot location"></i> Location
+<i class="fa-solid fa-location-dot"></i> Location
 </a>
 
-<a href="contact.vcf" class="link-btn">
-<i class="fa-solid fa-address-card contact"></i> Save Contact
+<a href="aloy_contact.vcf" class="link-btn">
+<i class="fa-solid fa-address-card"></i> Save Contact
 </a>
 
 <div class="footer">
